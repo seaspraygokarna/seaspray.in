@@ -71,6 +71,17 @@
     </div>
 </div>
 
+<script>
+    // Ensure redirection works for the link with popup-with-form class
+    document.querySelector('.popup-with-form[href="https://apps.revivotech.in/website/672dbc473e8d5e76f1fea520/booking-engine"]')
+        .addEventListener('click', function(event) {
+            // Allow the default action (navigation)
+            event.preventDefault();
+            window.location.href = this.href;
+        });
+</script>
+
+
                         </div>
                         <div class="col-12">
                             <div class="mobile_menu d-block d-lg-none"></div>
